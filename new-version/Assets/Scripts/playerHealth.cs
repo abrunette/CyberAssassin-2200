@@ -1,8 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour {
+
+
+    //HUD variables
+
+    public Slider healthSlider;
+
+    //calculat health variables
 
     public float fullHealth;
 
@@ -16,7 +24,11 @@ public class playerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currentHealth = fullHealth;
-      controlMovement = GetComponent<playerController>();
+        controlMovement = GetComponent<playerController>();
+
+        healthSlider.maxValue = fullHealth;
+        healthSlider.value = fullHealth;
+
 	}
 	
 	// Update is called once per frame
@@ -30,6 +42,7 @@ public class playerHealth : MonoBehaviour {
             return;
         }
         currentHealth-=damage;
+        healthSlider.value = currentHealth;
 
 
         if(currentHealth <= 0 ){

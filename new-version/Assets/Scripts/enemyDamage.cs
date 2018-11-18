@@ -8,6 +8,7 @@ public class enemyDamage : MonoBehaviour {
     public float damageRate;
     public float pushBackForce;
 
+
     float nextDamage;
 
 
@@ -15,7 +16,7 @@ public class enemyDamage : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        nextDamage = 0f;
 	}
 	
 	// Update is called once per frame
@@ -32,6 +33,8 @@ public class enemyDamage : MonoBehaviour {
             thePlayerHealth.addDamage(damage);
             nextDamage = Time.time + damageRate;
 
+         
+
             Debug.Log("in here");
             pushBack(other.transform);
         }
@@ -44,7 +47,7 @@ public class enemyDamage : MonoBehaviour {
 
         Rigidbody2D pushRB = pushedObject.gameObject.GetComponent<Rigidbody2D>();
         pushRB.velocity = Vector2.zero;
-        pushRB.AddForce(pushDirection, ForceMode2D.Impulse);
+      // pushRB.AddForce(pushDirection, ForceMode2D.Impulse);
 
     }
 }

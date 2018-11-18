@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4635867961118982}
   - component: {fileID: 198589988619380156}
   - component: {fileID: 199145816921469732}
+  - component: {fileID: 114158939632630358}
   m_Layer: 0
   m_Name: playerDeathFX
   m_TagString: Untagged
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &114158939632630358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1977529994639510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1a88ec527e54def92632626ab7378e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliveTime: 1
 --- !u!198 &198589988619380156
 ParticleSystem:
   m_ObjectHideFlags: 1
