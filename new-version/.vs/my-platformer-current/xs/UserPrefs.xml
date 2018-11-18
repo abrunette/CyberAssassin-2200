@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{2A7BBBBF-7B39-F6DA-6C34-6D96DF23713A}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/enemyDamage.cs">
+    <Files>
+      <File FileName="Assets/Scripts/rocketHit.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/enemyHealthController.cs" Line="9" Column="25" />
+      <File FileName="Assets/Scripts/playerHealth.cs" Line="42" Column="29" />
+      <File FileName="Assets/Scripts/enemyDamage.cs" Line="7" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
