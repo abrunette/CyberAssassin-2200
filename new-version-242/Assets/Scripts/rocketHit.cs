@@ -42,8 +42,12 @@ public class rocketHit : MonoBehaviour
                 enemyHealthController hurtEnemy = other.gameObject.GetComponent<enemyHealthController>();
                 hurtEnemy.addDamage(weaponDamage);
             }
+            // [RC] For destroying breakable objects
+            else if (other.tag == "breakableObject")
+                Destroy(other.gameObject);
+
         }
-     
+
     }
 
 
@@ -61,6 +65,9 @@ public class rocketHit : MonoBehaviour
                 enemyHealthController hurtEnemy = other.gameObject.GetComponent<enemyHealthController>();
                 hurtEnemy.addDamage(weaponDamage);
             }
+            // [RC] For destroying breakable objects
+            else if (other.tag == "breakableObject")
+                Destroy(other);
         }
 
     }

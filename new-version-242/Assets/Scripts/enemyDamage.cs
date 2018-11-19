@@ -5,18 +5,18 @@ using UnityEngine;
 public class enemyDamage : MonoBehaviour {
 
     public float damage;
-    public float damageRate;
+    //public float damageRate;
     public float pushBackForce;
 
 
-    float nextDamage;
+    //float nextDamage;
 
 
 
 
 	// Use this for initialization
 	void Start () {
-        nextDamage = 0f;
+        //nextDamage = 0f;
 	}
 	
 	// Update is called once per frame
@@ -31,7 +31,7 @@ public class enemyDamage : MonoBehaviour {
         if (other.tag == "Player"){
             playerHealth thePlayerHealth = other.gameObject.GetComponent<playerHealth>();
             thePlayerHealth.addDamage(damage);
-            nextDamage = Time.time + damageRate;
+            //nextDamage = Time.time + damageRate;
 
          
 
@@ -47,7 +47,7 @@ public class enemyDamage : MonoBehaviour {
 
         Rigidbody2D pushRB = pushedObject.gameObject.GetComponent<Rigidbody2D>();
         pushRB.velocity = Vector2.zero;
-      // pushRB.AddForce(pushDirection, ForceMode2D.Impulse);
+        pushRB.AddForce(pushDirection, ForceMode2D.Impulse);
 
     }
 }
