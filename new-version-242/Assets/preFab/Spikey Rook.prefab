@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 61922716652440266}
   - component: {fileID: 114197094249664922}
   - component: {fileID: 114256000388946848}
+  - component: {fileID: 114653210263746566}
   m_Layer: 9
   m_Name: Spikey Rook
   m_TagString: enemy
@@ -148,6 +149,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   pushBackForce: 15
+--- !u!114 &114653210263746566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119176160542314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee372a38dc6dd6047aea8e598640e200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delta: 1.5
+  speed: 2
 --- !u!212 &212547856338271892
 SpriteRenderer:
   m_ObjectHideFlags: 1

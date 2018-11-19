@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\destroyMissle.cs" />
     <Compile Include="Assets\Scripts\enemyDamage.cs" />
     <Compile Include="Assets\Scripts\enemyHealthController.cs" />
+    <Compile Include="Assets\Scripts\moveRook.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
     <Compile Include="Assets\Scripts\projectileController.cs" />
