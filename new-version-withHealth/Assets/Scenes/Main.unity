@@ -4261,9 +4261,9 @@ GameObject:
   - component: {fileID: 2146232961}
   - component: {fileID: 2146232964}
   - component: {fileID: 2146232965}
-  - component: {fileID: 2146232966}
   - component: {fileID: 2146232967}
   - component: {fileID: 2146232968}
+  - component: {fileID: 2146232966}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -4326,7 +4326,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: e67e9c5754682924db5d5a8f32c63366, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 250d9a252f33ee34bb2ddec6a84c9712, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4383,7 +4383,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.91}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
