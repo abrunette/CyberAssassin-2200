@@ -783,7 +783,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4246647956009246, guid: 6f72cbb520584420996d508743401c24, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4246647956009246, guid: 6f72cbb520584420996d508743401c24, type: 2}
       propertyPath: m_LocalRotation.x
@@ -804,6 +804,10 @@ Prefab:
     - target: {fileID: 4246647956009246, guid: 6f72cbb520584420996d508743401c24, type: 2}
       propertyPath: m_RootOrder
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1913911339839322, guid: 6f72cbb520584420996d508743401c24, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f72cbb520584420996d508743401c24, type: 2}
@@ -1249,6 +1253,16 @@ Prefab:
     - target: {fileID: 4868565287636120, guid: 5c135b4bd068c4f8082979319e0ea8ad, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.306
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030195692533306, guid: 5c135b4bd068c4f8082979319e0ea8ad,
+        type: 2}
+      propertyPath: delta
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030195692533306, guid: 5c135b4bd068c4f8082979319e0ea8ad,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c135b4bd068c4f8082979319e0ea8ad, type: 2}
@@ -2134,6 +2148,17 @@ Prefab:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114899744800327684, guid: b8a6ed5c548404de18ad6d3d99c5443e,
+        type: 2}
+      propertyPath: DropItem
+      value: 
+      objectReference: {fileID: 1415491425918786, guid: a4dd9e70995934f37ae6a88468382bee,
+        type: 2}
+    - target: {fileID: 114899744800327684, guid: b8a6ed5c548404de18ad6d3d99c5443e,
+        type: 2}
+      propertyPath: HasDropItem
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8a6ed5c548404de18ad6d3d99c5443e, type: 2}
   m_IsPrefabAsset: 0
@@ -2505,8 +2530,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173845742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 374.9, y: 15.13, z: -10.710571}
-  m_LocalScale: {x: 8.572805, y: 5.594589, z: 0.26207998}
+  m_LocalPosition: {x: 374.9, y: 20.8, z: -10.710571}
+  m_LocalScale: {x: 8.572805, y: 6.240764, z: 0.26207998}
   m_Children: []
   m_Father: {fileID: 1888668283}
   m_RootOrder: 0
@@ -2520,11 +2545,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4379072834130848, guid: 2e66e5e907fa44ba89a9853c0b34f3d0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 50.47
+      value: 46.03
       objectReference: {fileID: 0}
     - target: {fileID: 4379072834130848, guid: 2e66e5e907fa44ba89a9853c0b34f3d0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.8
+      value: -5.68
       objectReference: {fileID: 0}
     - target: {fileID: 4379072834130848, guid: 2e66e5e907fa44ba89a9853c0b34f3d0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2557,7 +2582,12 @@ Prefab:
     - target: {fileID: 114744494866543078, guid: 2e66e5e907fa44ba89a9853c0b34f3d0,
         type: 2}
       propertyPath: delta
-      value: 3
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114744494866543078, guid: 2e66e5e907fa44ba89a9853c0b34f3d0,
+        type: 2}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e66e5e907fa44ba89a9853c0b34f3d0, type: 2}
@@ -2987,6 +3017,10 @@ Prefab:
     - target: {fileID: 1478731356720228, guid: c1598c804e6be45e1b683a818191143f, type: 2}
       propertyPath: m_Name
       value: heartHealth-Big (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478731356720228, guid: c1598c804e6be45e1b683a818191143f, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1598c804e6be45e1b683a818191143f, type: 2}
@@ -3671,6 +3705,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyMaxHealth: 70
   scoreValue: 50
+  HasDropItem: 1
+  DropItem: {fileID: 1415491425918786, guid: a4dd9e70995934f37ae6a88468382bee, type: 2}
 --- !u!61 &1626639471
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4381,7 +4417,7 @@ GameObject:
   - component: {fileID: 2050026076}
   - component: {fileID: 2050026075}
   - component: {fileID: 2050026074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: heartHealth-Big (1)
   m_TagString: Health
   m_Icon: {fileID: 0}

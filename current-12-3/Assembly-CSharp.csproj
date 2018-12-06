@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{56A14DAF-93EB-AC74-88BE-125909E058E6}</ProjectGuid>
+    <ProjectGuid>{8CCAFB64-265F-2758-A2C1-7AF3C560C8B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -74,16 +74,16 @@
     <Compile Include="Assets\Scripts\rocketHit.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200-AA-ExpolorerWithPawnFaceAnim/new-version-withHealth/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200/current-12-3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200-AA-ExpolorerWithPawnFaceAnim/new-version-withHealth/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200/current-12-3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200-AA-ExpolorerWithPawnFaceAnim/new-version-withHealth/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200/current-12-3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200-AA-ExpolorerWithPawnFaceAnim/new-version-withHealth/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/admin/Development/unity-development/CyberAssassin-2200/current-12-3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -8,6 +8,8 @@ public class enemyHealthController : MonoBehaviour {
 
     public int scoreValue = 10;
 
+    public bool HasDropItem = false;
+    public GameObject DropItem;
 
     float currentHealth;
 
@@ -39,6 +41,9 @@ public class enemyHealthController : MonoBehaviour {
     void makeDead()
     {
         ScoreManager.score += scoreValue;
+        if(HasDropItem == true){
+            Instantiate(DropItem, transform.position, transform.rotation);
+        }
         Destroy(gameObject);
     }
 }
