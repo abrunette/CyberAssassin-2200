@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{8CCAFB64-265F-2758-A2C1-7AF3C560C8B8}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/cameraController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/enemyHealthController.cs" Line="52" Column="1" />
+      <File FileName="Assets/Scripts/bouncyPlatform.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/playerController.cs" Line="19" Column="5" />
+      <File FileName="Assets/Scripts/enemyDamage.cs" Line="8" Column="5" />
+      <File FileName="Assets/Scripts/cameraController.cs" Line="12" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
