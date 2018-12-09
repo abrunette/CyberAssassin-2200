@@ -76,10 +76,13 @@ public class KingAI : MonoBehaviour {
     void Update() {
         // Check to see if there is an update in the king's state
         // Check if the player is in nearby
-        if (KingState == "idle" && Vector2.Distance(this.transform.position, PlayerCharacter.transform.position) <= 10f)
+        if (PlayerCharacter != null)
         {
-            Debug.Log("King: idle -> stand_at_attention");
-            KingState = "stand_at_attention";
+            if (KingState == "idle" && Vector2.Distance(this.transform.position, PlayerCharacter.transform.position) <= 10f)
+            {
+                Debug.Log("King: idle -> stand_at_attention");
+                KingState = "stand_at_attention";
+            }
         }
         /*
         // Check if enough time has passed, and the king should jump

@@ -1,0 +1,2 @@
+C:\Users\ryand\OneDrive\Documents\CSUSM\Year5\CS485_GP\CyberAssassin-2200\CyberAssassin2200\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\ryand\OneDrive\Documents\CSUSM\Year5\CS485_GP\CyberAssassin-2200\CyberAssassin2200\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

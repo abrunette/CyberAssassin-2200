@@ -111,4 +111,17 @@ public class UIManager : MonoBehaviour {
 		Debug.Log("Has quit game");
 		Application.Quit();
 	}
+
+    public void PlayerDiedUIM()
+    {
+        StartCoroutine(DelayedMMReturn());
+    }
+
+    IEnumerator DelayedMMReturn()
+    {
+        Debug.Log("UIManager will return the player to the main menu in 3 seconds");
+        yield return new WaitForSeconds(3f);
+        Debug.Log("Going to MainMenu");
+        SceneManager.LoadScene("MainMenu");
+    }
 }

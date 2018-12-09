@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour {
@@ -14,6 +13,7 @@ public class playerHealth : MonoBehaviour {
     //calculat health variables
 
     public float fullHealth;
+    public float FallingDeathHeight;
 
     float currentHealth;
 
@@ -35,7 +35,7 @@ public class playerHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (this.gameObject.transform.position.y <= -14)
+        if (this.transform.position.y < FallingDeathHeight)
             makeCharacterDead();
 	}
 
@@ -75,20 +75,16 @@ public class playerHealth : MonoBehaviour {
         }
     }
 
-    public void makeCharacterDead(){
-        // Make the character appear dead
-        Instantiate(deathFX, transform.position, transform.rotation);
-        Destroy(gameObject);
-        Debug.Log("In Make Dead");
-        StartCoroutine(PostDeathDelay());
-    }
-
-    IEnumerator PostDeathDelay()
+    public void makeCharacterDead()
     {
-        Debug.Log("Waiting to load...");
-        yield return new WaitForSeconds(1);
-        Debug.Log("Loading Main menu");
-        SceneManager.LoadScene("MainMenu");
-        yield return null;
+        Debug.Log("In Make Dead");
+        Instantiate(deathFX, transform.position, transform.rotation); // Play the death animation
+
+        // Have the UIManager begin moving the player to the MainMenu
+        GameObject UIM = GameObject.FindWithTag("UIManager");
+        UIM.gameObject.GetComponent<UIManager>().PlayerDiedUIM();
+
+        Destroy(gameObject);
+        
     }
 }
