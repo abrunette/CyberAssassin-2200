@@ -382,6 +382,7 @@ public class KingAI : MonoBehaviour {
         }
     }
 
+    /*
     private void OnTriggerEnter(Collider2D collision)
     {
         Debug.Log("OnTriggerEnter 2D fired");
@@ -394,6 +395,7 @@ public class KingAI : MonoBehaviour {
             ShootingKey--; // Return a key
         }
     }
+    */
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -428,6 +430,7 @@ public class KingAI : MonoBehaviour {
         return;
     }
 
+    /*
     private void OnTriggerExit2D(Collider other)
     {
         if (other.tag == "KingShootingRange")
@@ -458,6 +461,7 @@ public class KingAI : MonoBehaviour {
 
         return;
     }
+    */
 
     /* * * * * * * * * * * * * *\
      *   Victory/Defeat Logic  *
